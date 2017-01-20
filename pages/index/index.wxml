@@ -1,9 +1,9 @@
 <!--index.wxml-->
 <view class="container">
     <view class="input_name">
-        <input auto-focus name="input_name" placeholder="请输入花名"/>
+        <input auto-focus name="input_name" placeholder="请输入花名" bindblur="bindNameInput"/>
     </view>
     <view class="searchButton">
-        <button type="default" bindblur="bindNameInput" form-type="submit" bindtap="onSearch">搜索</button>
+        <button type="default" form-type="submit" bindtap="onSearch">搜索</button>
     </view>
 </view>
