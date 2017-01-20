@@ -25,5 +25,9 @@ Page({
       icon: 'loading',
       duration: 10000
     });
+
+    setTimeout(function () {
+      wx.hideToast()
+    }, 1000)
   }
 });
