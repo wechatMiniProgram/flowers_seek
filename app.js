@@ -1,30 +1,18 @@
-//app.js
 App({
+  init: function () {
+    wx.setStorage({key: 'name', data: '太阳花'});
+    wx.setStorage({key: 'alias', data: "半枝莲、狭叶韩信草、通经草、紫连草"});
+    wx.setStorage({key: 'efficacy', data: "太阳花辛、苦，寒。归肺、肝、肾经。太阳花的功效与作用清热解毒，化瘀利尿。太阳花常用于疔疮肿毒，咽喉肿痛，毒蛇咬伤，跌扑伤痛，水肿，黄疸的治疗"});
+  },
   onLaunch: function () {
-    //调用API从本地缓存中获取数据
-    var logs = wx.getStorageSync('logs') || []
-    logs.unshift(Date.now())
-    wx.setStorageSync('logs', logs)
+    this.init();
+    var name = wx.getStorageSync('name') || [];
+    var alias = wx.getStorageSync('alias') || [];
+    var efficacy = wx.getStorageSync('efficacy') || [];
   },
-  getUserInfo:function(cb){
-    var that = this
-    if(this.globalData.userInfo){
-      typeof cb == "function" && cb(this.globalData.userInfo)
-    }else{
-      //调用登录接口
-      wx.login({
-        success: function () {
-          wx.getUserInfo({
-            success: function (res) {
-              that.globalData.userInfo = res.userInfo
-              typeof cb == "function" && cb(that.globalData.userInfo)
-            }
-          })
-        }
-      })
-    }
-  },
-  globalData:{
-    userInfo:null
+  globalData: {
+    name: null,
+    alias: null,
+    efficacy: null,
   }
-})
+});

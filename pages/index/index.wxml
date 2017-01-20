@@ -1,10 +1,9 @@
 <!--index.wxml-->
 <view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+    <view class="input_name">
+        <input auto-focus name="input_name" placeholder="请输入花名"/>
+    </view>
+    <view class="searchButton">
+        <button type="default" bindblur="bindNameInput" form-type="submit" bindtap="onSearch">搜索</button>
+    </view>
 </view>
