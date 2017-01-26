@@ -1,12 +1,34 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/flowersInfo/flowersInfo"
+    "pages/home/home",
+    "pages/flowersDetail/flowersDetail",
+    "pages/flowersEfficacy/flowersEfficacy",
+    "pages/flowersMeaning/flowersMeaning",
+    "pages/personalCenter/personalCenter"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#1296db",
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "http://pic1.win4000.com/mobile/0/5555833be5dfe.jpg",
+      "selectedIconPath": "http://pic1.win4000.com/mobile/0/5555833be5dfe.jpg"
+    },{
+      "pagePath": "pages/flowersMeaning/flowersMeaning",
+      "text": "花语",
+      "iconPath": "images/ico-setting.png",
+      "selectedIconPath": "images/ico-setting-d.png"
+    },{
+      "pagePath": "pages/personalCenter/personalCenter",
+      "text": "我的",
+      "iconPath": "images/ico-help.png",
+      "selectedIconPath": "images/ico-help-d.png"
+    }]
   }
 }

@@ -1,8 +1,4 @@
 
 .container {
     padding: 20px;
-    background-repeat: no-repeat;
-    background-image: url(http://pic1.win4000.com/mobile/0/5555833be5dfe.jpg);
-    height: 585px;
-    background-size: 100% 100%;
 }

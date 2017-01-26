@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="container">
+    <image src="http://pic1.win4000.com/mobile/0/5555833be5dfe.jpg"></image>
+    <view class="input_name">
+        <input auto-focus oninput="onSearch" name="input_name" placeholder="请输入花名" bindblur="bindNameInput"/>
+    </view>
+    <view class="home-bottom">
+        <label>常用搜索</label>
+        <view class="searchItem_view">
+            <button class="searchItem" bindtap="onSearch">太阳花</button>
+            <button class="searchItem">玫瑰花</button>
+            <button class="searchItem">丁香花</button>
+
+        </view>
+        <view class="searchItem_view">
+            <button class="searchItem">太阳花</button>
+            <button class="searchItem">玫瑰花</button>
+            <button class="searchItem">丁香花</button>
+        </view>
+        <view class="searchItem_view">
+            <button class="searchItem">太阳花</button>
+            <button class="searchItem">玫瑰花</button>
+            <button class="searchItem">丁香花</button>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="flowers_detail">
+    <view class="flower_name">太阳花</view>
+    <label>属于</label>
+    <text>########</text>
+    <label>别名</label>
+    <text>########</text>
+    <label>功效</label>
+    <text>太阳花辛、苦，寒。归肺、肝、肾经。太阳花的功效与作用清热解毒，化瘀利尿。太阳花常用于疔疮肿毒，咽喉肿痛，毒蛇咬伤，跌扑伤痛，水肿，黄疸的治疗</text>
+</view>
+
