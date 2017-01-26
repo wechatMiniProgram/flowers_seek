@@ -10,18 +10,18 @@
     <view class="home-bottom">
         <label>常用搜索</label>
         <view class="searchItem_view">
-            <button class="searchItem" bindtap="onSearch">太阳花</button>
+            <button class="searchItem" bindtap="jumpSearch">太阳花</button>
             <button class="searchItem">玫瑰花</button>
             <button class="searchItem">丁香花</button>
 
         </view>
         <view class="searchItem_view">
-            <button class="searchItem">太阳花</button>
+            <button class="searchItem" bindtap="jumpSearch">太阳花</button>
             <button class="searchItem">玫瑰花</button>
             <button class="searchItem">丁香花</button>
         </view>
         <view class="searchItem_view">
-            <button class="searchItem">太阳花</button>
+            <button class="searchItem" bindtap="jumpSearch">太阳花</button>
             <button class="searchItem">玫瑰花</button>
             <button class="searchItem">丁香花</button>
         </view>

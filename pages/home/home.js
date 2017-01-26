@@ -2,8 +2,14 @@ Page({
   data: {
     inputName: '',
   },
-  onSearch: function (e) {
-    console.log(e)
+
+  changeData(e) {
+    this.setData({
+      inputName: e.detail.value
+    });
+  },
+
+  onSearch(e) {
     if (this.data.inputName === '') {
       this.showToast('请您输入名称');
     } else if (this.data.inputName === "太阳花") {
@@ -15,10 +21,10 @@ Page({
     }
   },
 
-  changeData: function (e) {
-    this.setData({
-      inputName: e.detail.value
-    });
+  jumpSearch(){
+    wx.navigateTo({
+      url: "../flowersEfficacy/flowersEfficacy"
+    })
   },
 
   showToast(title){
@@ -28,7 +34,7 @@ Page({
       duration: 10000
     });
 
-    setTimeout(function () {
+    setTimeout(()=> {
       wx.hideToast()
     }, 800)
   }
