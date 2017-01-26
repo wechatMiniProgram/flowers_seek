@@ -3,25 +3,25 @@
     <view class="family">
         <image src="http://pic1.win4000.com/mobile/0/5555833be5dfe.jpg"></image>
 
-        <navigator url="../pages/flowerDetail/flowerDetail">
+        <navigator url="../flowersDetail/flowersDetail">
             <label>亲情</label>
         </navigator>
     </view>
     <view class="friend">
         <image src="http://pic1.win4000.com/mobile/0/5555833be5dfe.jpg"></image>
-        <navigator url="../pages/flowerDetail/flowerDetail">
+        <navigator url="../flowersDetail/flowersDetail">
             <label>亲情</label>
         </navigator>
     </view>
     <view class="love">
         <image src="http://pic1.win4000.com/mobile/0/5555833be5dfe.jpg"></image>
-        <navigator url="../pages/flowerDetail/flowerDetail">
+        <navigator url="../flowersDetail/flowersDetail">
             <label>亲情</label>
         </navigator>
     </view>
     <view class="other">
         <image src="http://pic1.win4000.com/mobile/0/5555833be5dfe.jpg"></image>
-        <navigator url="../pages/flowerDetail/flowerDetail">
+        <navigator url="../flowersDetail/flowersDetail">
             <label>其他</label>
         </navigator>
     </view>
