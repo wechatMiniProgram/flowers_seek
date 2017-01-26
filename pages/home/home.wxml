@@ -2,7 +2,10 @@
 <view class="container">
     <image src="http://pic1.win4000.com/mobile/0/5555833be5dfe.jpg"></image>
     <view class="input_name">
-        <input auto-focus oninput="onSearch" name="input_name" placeholder="请输入花名" bindblur="bindNameInput"/>
+        <input auto-focus name="input_name" placeholder="请输入花名" bindblur="changeData"/>
+        <view class="search_icon">
+               <icon type="search" bindtap="onSearch"/>
+         </view>
     </view>
     <view class="home-bottom">
         <label>常用搜索</label>
