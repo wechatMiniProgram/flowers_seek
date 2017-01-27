@@ -1,28 +1,10 @@
 <!--index.wxml-->
 <view>
-    <view class="item">
-        <image src="http://pic1.win4000.com/mobile/0/5555833be5dfe.jpg"></image>
-        <label>百合花</label>
-        <button>查看详情</button>
-    </view>
 
-    <view class="item">
-        <image src="http://pic1.win4000.com/mobile/0/5555833be5dfe.jpg"></image>
-        <label>百合花</label>
-        <button>查看详情</button>
-
-    </view>
-    <view class="item">
-        <image src="http://pic1.win4000.com/mobile/0/5555833be5dfe.jpg"></image>
-        <label>百合花</label>
-        <button>查看详情</button>
-
-    </view>
-    <view class="item">
-        <image src="http://pic1.win4000.com/mobile/0/5555833be5dfe.jpg"></image>
-        <label>百合花</label>
-        <button>查看详情</button>
-
-    </view>
+ <view wx:for="{{flowerData}}" wx:key="name" class="item">
+ <image src="{{item.url}}"></image>
+         <label>{{item.name}}</label>
+         <button>查看详情</button>
+ </view>
 
 </view>
