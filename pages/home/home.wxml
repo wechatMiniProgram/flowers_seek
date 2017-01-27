@@ -9,15 +9,15 @@
     </view>
     <view class="home-bottom">
         <label>常用搜索</label>
-        <view wx:for="{{oftenOne}}" class="oftenSearch">
+        <view wx:for="{{oftenOne}}" wx:key="name" class="oftenSearch">
             <button class="searchItem" bindtap="jumpSearch">{{item}}</button>
         </view>
 
-         <view wx:for="{{oftenTwo}}">
+         <view wx:for="{{oftenTwo}}" wx:key="name">
             <button class="searchItem" bindtap="jumpSearch">{{item}}</button>
          </view>
 
-         <view wx:for="{{oftenThere}}" class="oftenSearch">
+         <view wx:for="{{oftenThere}}" wx:key="name" class="oftenSearch">
             <button class="searchItem" bindtap="jumpSearch">{{item}}</button>
          </view>
     </view>
