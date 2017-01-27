@@ -17,18 +17,18 @@
     "list": [{
       "pagePath": "pages/home/home",
       "text": "首页",
-      "iconPath": "http://pic1.win4000.com/mobile/0/5555833be5dfe.jpg",
-      "selectedIconPath": "http://pic1.win4000.com/mobile/0/5555833be5dfe.jpg"
+      "iconPath": "image/home.png",
+      "selectedIconPath": "image/home_selected.png"
     },{
       "pagePath": "pages/flowersMeaning/flowersMeaning",
       "text": "花语",
-      "iconPath": "images/ico-setting.png",
-      "selectedIconPath": "images/ico-setting-d.png"
+      "iconPath": "image/huayu.png",
+      "selectedIconPath": "image/huayu_selected.png"
     },{
       "pagePath": "pages/personalCenter/personalCenter",
       "text": "我的",
-      "iconPath": "images/ico-help.png",
-      "selectedIconPath": "images/ico-help-d.png"
+      "iconPath": "image/personalCenter.png",
+      "selectedIconPath": "image/personalCenter_selected.png"
     }]
   }
 }
