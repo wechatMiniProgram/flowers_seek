@@ -4,7 +4,7 @@ Page(
       name: '',
       category: '',
       otherName: '' || '无',
-      efficacy: '',
+      efficiency: '',
       imageUrl: ''
     },
     onLoad(option){
@@ -20,7 +20,7 @@ Page(
                 name: option.name,
                 category: flower.category,
                 otherName: flower.otherName,
-                efficacy: flower.efficacy,
+                efficiency: flower.efficiency,
                 imageUrl: flower.url,
               })
             }
