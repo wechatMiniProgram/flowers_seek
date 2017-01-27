@@ -9,21 +9,16 @@
     </view>
     <view class="home-bottom">
         <label>常用搜索</label>
-        <view class="searchItem_view">
-            <button class="searchItem" bindtap="jumpSearch">太阳花</button>
-            <button class="searchItem">玫瑰花</button>
-            <button class="searchItem">丁香花</button>
+        <view wx:for="{{oftenOne}}" class="oftenSearch">
+            <button class="searchItem" bindtap="jumpSearch">{{item}}</button>
+        </view>
 
-        </view>
-        <view class="searchItem_view">
-            <button class="searchItem" bindtap="jumpSearch">百合花</button>
-            <button class="searchItem">风信子</button>
-            <button class="searchItem">彼岸花</button>
-        </view>
-        <view class="searchItem_view">
-            <button class="searchItem" bindtap="jumpSearch">蒲公英</button>
-            <button class="searchItem">七色花</button>
-            <button class="searchItem">樱花</button>
-        </view>
+         <view wx:for="{{oftenTwo}}">
+            <button class="searchItem" bindtap="jumpSearch">{{item}}</button>
+         </view>
+
+         <view wx:for="{{oftenThere}}" class="oftenSearch">
+            <button class="searchItem" bindtap="jumpSearch">{{item}}</button>
+         </view>
     </view>
 </view>

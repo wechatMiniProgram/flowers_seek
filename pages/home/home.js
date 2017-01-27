@@ -2,6 +2,9 @@ Page({
   data: {
     inputName: 'jjjjj',
     flowerData: [],
+    oftenOne:['太阳花','百合花','风信子'],
+    oftenTwo:['彼岸花','七色花','玫瑰花'],
+    oftenThere:['雏菊','樱花','丁香花']
   },
 
   changeData(e) {

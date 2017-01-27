@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<view class="efficacy">
+<view>
     <view class="item">
         <image src="http://pic1.win4000.com/mobile/0/5555833be5dfe.jpg"></image>
         <label>百合花</label>

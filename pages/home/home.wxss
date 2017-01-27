@@ -12,6 +12,14 @@ input {
     margin-top:-24px;
 }
 
+.oftenSearch{
+    display:inline;
+}
+
+label{
+    display:block;
+}
+
 .searchItem_view{
     margin:10px;
 }
