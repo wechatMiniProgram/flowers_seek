@@ -1,18 +1,15 @@
-.flowers_detail {
-    background-image: url(http://pic1.win4000.com/mobile/0/5555833be5dfe.jpg);
-    background-repeat: no-repeat;
-    height: 585px;
-    background-size: 100% 100%;
-}
-
 .flower_name {
     font-size: 30px;
-    margin-left: 38%;
+    text-align:center
 
 }
 
 label {
     font-size: 25px;
     display: block;
-    color: #eee;
+    text-align:center
+}
+
+image{
+    width:100%;
 }

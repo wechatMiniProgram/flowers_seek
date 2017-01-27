@@ -1,7 +1,7 @@
 Page({
   data: {
-    inputName: '',
-    flowerData: []
+    inputName: 'jjjjj',
+    flowerData: [],
   },
 
   changeData(e) {
@@ -30,9 +30,8 @@ Page({
       });
       this.data.flowerData.find((flower)=> {
         if (flower.name === this.data.inputName) {
-          console.log('找到了')
           wx.navigateTo({
-            url: "../flowersEfficacy/flowersEfficacy"
+            url: "../flowersEfficacy/flowersEfficacy?name="+flower.name
           })
         }
       });
