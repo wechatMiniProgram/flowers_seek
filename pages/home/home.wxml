@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <view class="container">
-    <image src="http://pic1.win4000.com/mobile/0/5555833be5dfe.jpg"></image>
+    <image src="https://raw.githubusercontent.com/Hongwing/MiniApp/master/images/backGround/bg7.jpg"></image>
     <view class="input_name">
         <input auto-focus name="input_name" placeholder="请输入花名" bindblur="changeData"/>
         <view class="search_icon">
