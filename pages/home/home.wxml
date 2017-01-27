@@ -4,8 +4,8 @@
     <view class="input_name">
         <input auto-focus name="input_name" placeholder="请输入花名" bindblur="changeData"/>
         <view class="search_icon">
-               <icon type="search" bindtap="onSearch"/>
-         </view>
+            <icon type="search" bindtap="onSearch"/>
+        </view>
     </view>
     <view class="home-bottom">
         <label>常用搜索</label>

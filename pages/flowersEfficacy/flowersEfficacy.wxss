@@ -1,7 +1,6 @@
 .flower_name {
     font-size: 30px;
     text-align:center
-
 }
 
 label {

@@ -9,10 +9,6 @@ image {
     margin: 10px;
 }
 
-label {
-
-}
-
 button {
     display: inline;
     margin-left: 90px;
