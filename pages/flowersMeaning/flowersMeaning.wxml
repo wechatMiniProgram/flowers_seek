@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<view class="raw">
+<!--<view class="raw">
     <view class="family">
         <image src="http://pic1.win4000.com/mobile/0/5555833be5dfe.jpg"></image>
 
@@ -26,4 +26,31 @@
         </navigator>
     </view>
 
+</view>-->
+
+<!-- display by hongwing -->
+<!-- display -->
+<view class="container">
+    <view class="grid-display">
+        <view wx:key="*this" wx:for="{{flowerArray}}">
+            <view wx:if="{{index < 8}}">
+                <template is="displayFlower" data="{{...item}}"/>
+            </view>
+        </view>
+    </view>
 </view>
+
+<template name="displayFlower">
+    <view class="flower_name">
+        <label>{{name}}</label>
+        <image src="{{url}}"></image>
+        <label>别名</label>
+        <text class="little-text">{{otherName}}</text>
+        <label>种类</label>
+        <text class="little-text">{{category}}</text>
+        <label>花语</label>
+        <text class="little-text">{{meaning}}</text>
+        <label>趣味之花</label>
+        <text class="little-text">{{efficiency}}</text>
+    </view>
+</template>

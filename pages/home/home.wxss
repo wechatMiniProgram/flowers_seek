@@ -9,11 +9,14 @@ input {
 
 .search_icon{
     margin-left:285px;
-    margin-top:-24px;
+    margin-top:-16px;
 }
 
 .oftenSearch{
     display:inline;
+}
+.oftenSearch button {
+    background-color: #576b95;
 }
 
 label{
@@ -24,13 +27,23 @@ label{
     margin:10px;
 }
 
-.searchItem{
+.sssearchItem{
     display:inline;
     margin-left:20px;
+    margin-right: 20px;
 }
 
 .home-bottom{
     margin-top:50px;
+    padding-top: 20px;
+}
+
+.content {
+    margin-top: 15px;
+}
+
+.home-bottom button {
+    margin: 10px 15px 10px 15px;
 }
 
 image{

@@ -1,24 +1,36 @@
 <!--index.wxml-->
 <view class="container">
-    <image src="https://raw.githubusercontent.com/Hongwing/MiniApp/master/images/backGround/bg7.jpg"></image>
+    <image src="https://raw.githubusercontent.com/Hongwing/MiniApp/master/images/backGround/bg16.jpg"></image>
     <view class="input_name">
-        <input auto-focus name="input_name" placeholder="请输入花名" bindblur="changeData"/>
+        <input class="search-input" name="input_name" placeholder="请输入花名" bindblur="changeData"/>
         <view class="search_icon">
             <icon type="search" bindtap="onSearch"/>
         </view>
     </view>
     <view class="home-bottom">
         <label>常用搜索</label>
+        <view class="content">
+        <!--<button bindtap="tapMe">
+            <label>nihao</label>
+            <button type="primary">test</button>
+            <text selectable="true">百合花</text>
+        </button>-->
+
         <view wx:for="{{oftenOne}}" wx:key="name" class="oftenSearch">
-            <button class="searchItem" bindtap="jumpSearch">{{item}}</button>
+            <button size="mini" class="searchItem" bindtap="jumpSearch" disabled="true">{{item}}</button>
         </view>
 
-         <view wx:for="{{oftenTwo}}" wx:key="name">
-            <button class="searchItem" bindtap="jumpSearch">{{item}}</button>
+         <view wx:for="{{oftenTwo}}" wx:key="name" class="oftenSearch">
+            <button size="mini" class="searchItem" bindtap="jumpSearch" type="primary"  disabled="true">{{item}}</button>
          </view>
 
          <view wx:for="{{oftenThere}}" wx:key="name" class="oftenSearch">
-            <button class="searchItem" bindtap="jumpSearch">{{item}}</button>
+            <button size="mini" class="searchItem" bindtap="jumpSearch" disabled="true">{{item}}</button>
+         </view>
          </view>
     </view>
 </view>
+
+<!-- template can be used inside loop -->
+<!-- how to get the value of the button ? -->
+<!-- 最近搜索只需要显示即可-->

@@ -1,3 +1,8 @@
+.container {
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
 .flower_name {
     font-size: 30px;
     text-align:center
@@ -12,3 +17,4 @@ label {
 image{
     width:100%;
 }
+

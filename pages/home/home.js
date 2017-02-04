@@ -18,18 +18,33 @@ Page({
     if (this.data.inputName === '') {
       this.showToast('请您输入名称');
     } else {
-      app.globalData.flowerData.find((flower)=> {
+      var flower = app.getFlowerElementByName(this.data.inputName)
+      if (flower) {
+        wx.navigateTo({
+          url: "../flowersEfficacy/flowersEfficacy?name=" + flower.name
+        })
+      }else {
+        this.showToast('抱歉 查无此花')
+      }
+
+      /*app.globalData.flowerData.find((flower)=> {
         if (flower.name === this.data.inputName) {
           wx.navigateTo({
             url: "../flowersEfficacy/flowersEfficacy?name=" + flower.name
           })
         }
-      });
-      this.showToast('抱歉 查无此花');
+      });*/
     }
   },
 
+  tapMe (e) {
+    console.log(e)
+    console.log(e.type)
+  },
+
   jumpSearch(e){
+    console.log("navi" + e.detail.value)
+    
     wx.navigateTo({
       url: "../flowersEfficacy/flowersEfficacy?name="
     })

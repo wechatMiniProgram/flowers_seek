@@ -1,12 +1,14 @@
 <!--index.wxml-->
 <view class="container">
-    <view class="flower_name">{{name}}</view>
-     <image src="{{imageUrl}}"></image>
+    <view class="flower_name">{{Flower.name}}</view>
+     <image src="{{Flower.url}}"></image>
     <label>属于</label>
-    <text>{{category}}</text>
+    <text>{{Flower.category}}</text>
     <label>别名</label>
-    <text>{{otherName}}</text>
+    <text>{{Flower.otherName}}</text>
+    <label>花语</label>
+    <text>{{Flower.meaning}}</text>
     <label>功效</label>
-    <text>{{efficiency}}</text>
+    <text>{{Flower.efficiency}}</text>
 </view>
 

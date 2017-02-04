@@ -3,14 +3,15 @@ var app = getApp();
 Page(
   {
     data: {
-      name: '',
-      category: '',
-      otherName: '' || '无',
-      efficiency: '',
-      imageUrl: ''
+      Flower: {}
     },
     onLoad(option){
-      app.globalData.flowerData.find((flower)=> {
+      console.log(option)
+      var flower = app.getFlowerElementByName(option.name)    
+      this.setData({
+        Flower: flower
+      })
+      /* app.globalData.flowerData.find((flower)=> {
         if (flower.name === option.name) {
           this.setData({
             name: option.name,
@@ -20,7 +21,7 @@ Page(
             imageUrl: flower.url,
           })
         }
-      });
+      });*/
     }
   }
 );

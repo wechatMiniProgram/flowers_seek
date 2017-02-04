@@ -27,8 +27,29 @@
     padding: 10px;
 }
 
+
+.container {
+    padding-top: 10px;
+}
+
 image {
     width: 100%;
-    height: 50px;
+    height: 180px;
     display: block;
+}
+
+.flower_name {
+    font-size: 30px;
+    text-align:center;
+    margin-top: 20px;
+}
+
+label {
+    font-size: 25px;
+    display: block;
+    text-align:center
+}
+
+.little-text {
+    font-size: 14pt;
 }
