@@ -1,13 +1,14 @@
 <!--index.wxml-->
-<view class="container">
+<view class="personal_center_container">
+<view class="personal_center">
   <view  bindtap="bindViewTap" class="userinfo">
     <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
     <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    <text class="userinfo-nickname" wx:if="{{userInfo.gender == 1}}">性别：男</text>
-    <text class="userinfo-nickname" wx:if="{{userInfo.gender == 0}}">性别：女</text>
-    <text class="userinfo-nickname">居住地： {{userInfo.country}} - {{userInfo.province}} - {{userInfo.city}}</text>
+    <text class="userinfo-nickname">居住地：{{userInfo.province}} - {{userInfo.city}}</text>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+</view>
+
+<view class="favorite">
+  <text>我的收藏</text>
+</view>
 </view>

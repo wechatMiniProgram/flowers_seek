@@ -17,7 +17,7 @@
         </button>-->
 
         <view wx:for="{{oftenOne}}" wx:key="name" class="oftenSearch">
-            <button size="mini" class="searchItem" bindtap="jumpSearch" disabled="true">{{item}}</button>
+            <button size="mini" class="searchItem" bindtap="jumpSearch" type="primary" disabled="true">{{item}}</button>
         </view>
 
          <view wx:for="{{oftenTwo}}" wx:key="name" class="oftenSearch">
@@ -25,7 +25,7 @@
          </view>
 
          <view wx:for="{{oftenThere}}" wx:key="name" class="oftenSearch">
-            <button size="mini" class="searchItem" bindtap="jumpSearch" disabled="true">{{item}}</button>
+            <button size="mini" class="searchItem" bindtap="jumpSearch" type="primary" disabled="true">{{item}}</button>
          </view>
          </view>
     </view>

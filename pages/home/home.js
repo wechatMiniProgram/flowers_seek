@@ -4,8 +4,8 @@ Page({
   data: {
     inputName: '',
     oftenOne: ['太阳花', '百合花', '风信子'],
-    oftenTwo: ['雏菊', '七色花', '玫瑰花'],
-    oftenThere: ['彼岸花', '樱花', '丁香花']
+    oftenTwo: ['月季花', '七色花', '玫瑰花'],
+    oftenThere: ['彼岸花', '水仙花', '丁香花']
   },
 
   changeData(e) {
@@ -18,22 +18,17 @@ Page({
     if (this.data.inputName === '') {
       this.showToast('请您输入名称');
     } else {
-      var flower = app.getFlowerElementByName(this.data.inputName)
+      const flower = app.globalData.flowerData.find((flower)=>
+        flower.name === this.data.inputName
+      );
+
       if (flower) {
         wx.navigateTo({
           url: "../flowersEfficacy/flowersEfficacy?name=" + flower.name
         })
-      }else {
-        this.showToast('抱歉 查无此花')
+      } else {
+        this.showToast('抱歉 查无此花');
       }
-
-      /*app.globalData.flowerData.find((flower)=> {
-        if (flower.name === this.data.inputName) {
-          wx.navigateTo({
-            url: "../flowersEfficacy/flowersEfficacy?name=" + flower.name
-          })
-        }
-      });*/
     }
   },
 
@@ -44,7 +39,7 @@ Page({
 
   jumpSearch(e){
     console.log("navi" + e.detail.value)
-    
+
     wx.navigateTo({
       url: "../flowersEfficacy/flowersEfficacy?name="
     })

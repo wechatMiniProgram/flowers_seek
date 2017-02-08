@@ -13,7 +13,7 @@ wx.request({
   complete: function() {
     // complete
   }
-})
+});
 
 Page({
   data: {
@@ -24,7 +24,7 @@ Page({
     this.setData({
       flower: flowerData.FlowerData[0],
       flowerArray: flowerData.FlowerData
-    })
+    });
     console.log(this.data.flower.url)
   }
-})
+});

@@ -15,9 +15,6 @@ input {
 .oftenSearch{
     display:inline;
 }
-.oftenSearch button {
-    background-color: #576b95;
-}
 
 label{
     display:block;
@@ -27,7 +24,7 @@ label{
     margin:10px;
 }
 
-.sssearchItem{
+.searchItem{
     display:inline;
     margin-left:20px;
     margin-right: 20px;
@@ -38,15 +35,15 @@ label{
     padding-top: 20px;
 }
 
-.content {
-    margin-top: 15px;
-}
-
 .home-bottom button {
-    margin: 10px 15px 10px 15px;
+    margin: 25px 22px 10px 15px;
 }
 
 image{
     width:100%;
+}
+
+icon{
+    margin-top:-6px;
 }
 
