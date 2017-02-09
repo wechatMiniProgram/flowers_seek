@@ -37,6 +37,8 @@ label{
 
 .home-bottom button {
     margin: 25px 22px 10px 15px;
+    background-color: #F8F8F8;
+    color:#353535;
 }
 
 image{

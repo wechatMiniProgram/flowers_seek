@@ -20,7 +20,7 @@
       "iconPath": "image/home.png",
       "selectedIconPath": "image/home_selected.png"
     },{
-      "pagePath": "pages/flowersMeaning/flowersMeaning",
+      "pagePath": "pages/flowersDetail/flowersDetail",
       "text": "花语",
       "iconPath": "image/huayu.png",
       "selectedIconPath": "image/huayu_selected.png"

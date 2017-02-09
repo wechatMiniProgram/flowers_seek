@@ -1,6 +1,7 @@
 <!--index.wxml-->
  <view wx:for="{{flowerData}}" wx:key="name" class="item">
     <image src="{{item.url}}"></image>
-    <label>{{item.name}}</label>
-    <button>查看详情</button>
+    <view class="seek_button">
+        <button bindtap="seekMeaning" id="{{item.name}}">{{item.name}}</button>
+    </view>
  </view>

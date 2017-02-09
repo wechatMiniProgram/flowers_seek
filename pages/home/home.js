@@ -39,7 +39,7 @@ Page({
 
   jumpSearch(e){
     wx.navigateTo({
-      url: "../flowersEfficacy/flowersEfficacy?name="+e.target.id
+      url: "../flowersEfficacy/flowersEfficacy?name=" + e.target.id
     })
   },
 
