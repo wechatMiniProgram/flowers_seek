@@ -38,10 +38,8 @@ Page({
   },
 
   jumpSearch(e){
-    console.log("navi" + e.detail.value)
-
     wx.navigateTo({
-      url: "../flowersEfficacy/flowersEfficacy?name="
+      url: "../flowersEfficacy/flowersEfficacy?name="+e.target.id
     })
   },
 
