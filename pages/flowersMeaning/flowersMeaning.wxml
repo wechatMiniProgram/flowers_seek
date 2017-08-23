@@ -10,13 +10,13 @@
     <view class="friend">
         <image src="http://pic1.win4000.com/mobile/0/5555833be5dfe.jpg"></image>
         <navigator url="../flowersDetail/flowersDetail">
-            <label>亲情</label>
+            <label>友情</label>
         </navigator>
     </view>
     <view class="love">
         <image src="http://pic1.win4000.com/mobile/0/5555833be5dfe.jpg"></image>
         <navigator url="../flowersDetail/flowersDetail">
-            <label>亲情</label>
+            <label>爱情</label>
         </navigator>
     </view>
     <view class="other">

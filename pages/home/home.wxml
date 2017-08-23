@@ -7,30 +7,26 @@
             <icon type="search" bindtap="onSearch"/>
         </view>
     </view>
+
+    <view class="home-search">
+         <button class="search-btn "bindtap="uploadPicture">上传Flower</button>
+         <image src="{{pictureUrl}}"></image>
+    </view>
+
     <view class="home-bottom">
         <label>常用搜索</label>
         <view class="content">
-        <!--<button bindtap="tapMe">
-            <label>nihao</label>
-            <button type="primary">test</button>
-            <text selectable="true">百合花</text>
-        </button>-->
+            <view wx:for="{{oftenOne}}" wx:key="name" class="oftenSearch">
+                <button size="mini" class="searchItem" id="{{item}}" bindtap="jumpSearch" type="primary">{{item}}</button>
+            </view>
 
-        <view wx:for="{{oftenOne}}" wx:key="name" class="oftenSearch">
-            <button size="mini" class="searchItem" id="{{item}}" bindtap="jumpSearch" type="primary">{{item}}</button>
+            <view wx:for="{{oftenTwo}}" wx:key="name" class="oftenSearch">
+                <button size="mini" class="searchItem" id="{{item}}" bindtap="jumpSearch" type="primary">{{item}}</button>
+            </view>
+
+            <view wx:for="{{oftenThere}}" wx:key="name" class="oftenSearch">
+                <button size="mini" class="searchItem" id="{{item}}" bindtap="jumpSearch" type="primary">{{item}}</button>
+            </view>
         </view>
-
-         <view wx:for="{{oftenTwo}}" wx:key="name" class="oftenSearch">
-            <button size="mini" class="searchItem" id="{{item}}" bindtap="jumpSearch" type="primary">{{item}}</button>
-         </view>
-
-         <view wx:for="{{oftenThere}}" wx:key="name" class="oftenSearch">
-            <button size="mini" class="searchItem" id="{{item}}" bindtap="jumpSearch" type="primary">{{item}}</button>
-         </view>
-         </view>
     </view>
 </view>
-
-<!-- template can be used inside loop -->
-<!-- how to get the value of the button ? -->
-<!-- 最近搜索只需要显示即可-->

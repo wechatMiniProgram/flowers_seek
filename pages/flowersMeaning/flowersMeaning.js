@@ -4,7 +4,6 @@ var flowerData = {}
 wx.request({
   url: "https://raw.githubusercontent.com/Hongwing/MiniApp/master/data/FLOWER.json",
   success: function(res){
-    console.log("success\n" + res.data)
     flowerData = res.data
   },
   fail: function() {
